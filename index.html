@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VPHRF International | Peace & Human Rights</title>
+    <meta name="description" content="Vision Human Rights Peace Foundation (VPHRF International) is a global NGO dedicated to protecting human rights, fostering sustainable peace, and providing legal and humanitarian support to vulnerable populations." />
+
+<meta property="og:title" content="VPHRF International | Building Peace & Protecting Human Rights" />
+<meta property="og:description" content="Dedicated to global justice, equity, and the dignity of all people through expert-led advocacy, legal support, and humanitarian response." />
+<meta property="og:image" content="https://i.imgur.com/CsjjCZz.png" />
+<meta property="og:image:secure_url" content="https://i.imgur.com/CsjjCZz.png" />
+<meta property="og:image:type" content="image/png" />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="630" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://vphrf.international" /> <meta property="og:image:alt" content="VPHRF International Logo" />
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="VPHRF International | Building Peace & Protecting Human Rights">
+<meta name="twitter:description" content="Empowering the vulnerable and advocating for global justice through research, legal defense, and peace-building initiatives.">
+<meta name="twitter:image" content="https://i.imgur.com/CsjjCZz.png">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+    <style>
+        
+        :root {
+            --primary: #001f3f; 
+            --accent: #D4AF37;  
+            --light: #f4f4f4;
+            --white: #ffffff;
+            --transition: all 0.4s ease;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body { line-height: 1.6; color: #333; scroll-behavior: smooth; }
+        .container { width: 85%; margin: auto; overflow: hidden; }
+
+        
+        .navbar {
+            background: var(--primary);
+            color: var(--white);
+            padding: 1rem 0;
+            position: fixed;
+            width: 100%;
+            z-index: 1000;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.3);
+        }
+
+        .navbar .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo { font-size: 1.6rem; font-weight: bold; cursor: pointer; }
+        .logo span { color: var(--accent); }
+
+        .nav-links { display: flex; list-style: none; }
+        .nav-links li a {
+            color: var(--white);
+            text-decoration: none;
+            padding: 0.5rem 1.2rem;
+            font-weight: 500;
+            transition: var(--transition);
+        }
+
+        .nav-links li a:hover { color: var(--accent); }
+
+        
+        .menu-btn {
+            display: none;
+            cursor: pointer;
+            font-size: 1.8rem;
+            color: var(--white);
+            z-index: 1001;
+            transition: var(--transition);
+        }
+
+        .hero {
+            height: 100vh;
+            background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), 
+                        url('https://images.unsplash.com/photo-1529156069898-49953e39b3ac?auto=format&fit=crop&w=1500&q=80') no-repeat center center/cover;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: var(--white);
+            padding: 0 20px;
+        }
+
+        .hero h1 { font-size: 3.5rem; margin-bottom: 1rem; line-height: 1.2; }
+        .hero p { font-size: 1.2rem; margin-bottom: 2rem; max-width: 700px; }
+
+        .btn {
+            display: inline-block;
+            background: var(--accent);
+            color: var(--primary);
+            padding: 0.9rem 2.5rem;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 5px;
+            transition: var(--transition);
+        }
+
+        .btn:hover { background: #b8952e; transform: translateY(-3px); }
+
+      
+        .about-section { padding: 5rem 0; background: var(--light); }
+        .grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 30px; }
+        .card {
+            background: var(--white);
+            padding: 3rem;
+            text-align: center;
+            border-top: 5px solid var(--accent);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.05);
+            transition: var(--transition);
+        }
+        .card:hover { transform: translateY(-10px); }
+        .icon { font-size: 3.5rem; color: var(--primary); margin-bottom: 1.5rem; }
+
+        
+        .who-we-are { padding: 80px 0; background: #fff; }
+        .flex-container { display: flex; align-items: center; gap: 50px; }
+        .text-box { flex: 1; }
+        .text-box h2 { color: var(--primary); margin-bottom: 20px; font-size: 2.5rem; }
+        .text-box p { margin-bottom: 20px; font-size: 1.1rem; color: #555; text-align: justify; }
+        .image-box { flex: 1; }
+        .image-box img { 
+            width: 100%; 
+            border-radius: 12px; 
+            box-shadow: 20px 20px 0px var(--accent); 
+        }
+
+        
+        .impact { background: var(--primary); color: var(--white); padding: 70px 0; text-align: center; }
+        .impact-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 20px; }
+        .impact-item h3 { font-size: 2.8rem; color: var(--accent); margin-bottom: 10px; }
+        .impact-item p { font-weight: 500; text-transform: uppercase; letter-spacing: 1px; }
+
+       
+        footer { background: #111; color: #fff; text-align: center; padding: 3rem 0; }
+
+       
+        @media (max-width: 768px) {
+            .menu-btn { display: block; }
+
+            .nav-links {
+                position: fixed;
+                top: 0;
+                right: -100%;
+                height: 100vh;
+                width: 75%;
+                background: var(--primary);
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                transition: 0.5s ease-in-out;
+                box-shadow: -10px 0 20px rgba(0,0,0,0.4);
+            }
+
+            .nav-links.active { right: 0; } /* Yana fitowa idan an danna */
+
+            .nav-links li { margin: 1.5rem 0; }
+            .nav-links li a { font-size: 1.3rem; }
+
+            .grid, .flex-container, .impact-grid { grid-template-columns: 1fr; display: block; }
+            .flex-container { text-align: center; }
+            .image-box { margin-top: 40px; }
+            .hero h1 { font-size: 2.2rem; }
+            .impact-item { margin-bottom: 30px; }
+        }
+        
+       .logo2{
+            width: 40px;
+            height: 40px;
+            
+        }
+        
+        
+        
+.pillars-section { padding: 80px 0; background: #fff; }
+.section-title { text-align: center; margin-bottom: 50px; font-size: 2.5rem; color: var(--primary); }
+.section-title span { color: var(--accent); }
+
+.pillar-row { display: flex; align-items: center; gap: 40px; margin-bottom: 60px; }
+.pillar-row:nth-child(even) { flex-direction: row-reverse; }
+.pillar-image { flex: 1; border-radius: 15px; overflow: hidden; height: 350px; }
+.pillar-image img { width: 100%; height: 100%; object-fit: cover; transition: transform 0.5s; }
+.pillar-image img:hover { transform: scale(1.1); }
+.pillar-content { flex: 1; }
+.pillar-content h3 { font-size: 1.8rem; color: var(--primary); margin-bottom: 15px; border-left: 5px solid var(--accent); padding-left: 15px; }
+.pillar-content p { color: #666; font-size: 1.1rem; line-height: 1.8; }
+
+
+.main-footer { background: #0a0a0a; color: #bbb; padding: 60px 0 20px; }
+.footer-grid { display: grid; grid-template-columns: 2fr 1fr 1fr 1.5fr; gap: 40px; margin-bottom: 40px; }
+.footer-logo h2 { color: #fff; margin-bottom: 20px; }
+.footer-logo span { color: var(--accent); }
+.footer-links h4 { color: #fff; margin-bottom: 20px; text-transform: uppercase; font-size: 0.9rem; }
+.footer-links ul { list-style: none; }
+.footer-links ul li { margin-bottom: 12px; }
+.footer-links ul li a { color: #bbb; text-decoration: none; transition: var(--transition); }
+.footer-links ul li a:hover { color: var(--accent); padding-left: 5px; }
+.social-icons { display: flex; gap: 60px; margin-top: 20px; }
+.social-icons a { width: 40px; height: 40px; background: #222; display: flex; align-items: center; justify-content: center; border-radius: 50%; color: var(--accent); text-decoration: none; transition: var(--transition); }
+.social-icons a:hover { background: var(--accent); color: var(--primary); transform: translateY(-5px); }
+.footer-bottom { text-align: center; padding-top: 20px; border-top: 1px solid #222; font-size: 0.9rem; }
+
+@media (max-width: 768px) {
+    .pillar-row, .pillar-row:nth-child(even) { flex-direction: column; gap: 20px; }
+    .footer-grid { grid-template-columns: 1fr; }
+}
+
+  
+        
+        .story-text span { color: var(--accent); }
+        .story-img img { width: 93%; border-radius: 20px; box-shadow: 20px 20px 0 var(--primary); padding: 20px;}
+
+
+    </style>
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="container">
+           <img src="https://i.imgur.com/CsjjCZz.png" class="logo2"> <div class="logo">VPHRF <span>International</span></div>
+            
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#home">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="#programs">Programs</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+
+            <div class="menu-btn" id="menuToggle">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+
+    <header class="hero" id="home">
+        <div class="hero-content">
+            <h1>Building Peace, Protecting Human Rights</h1>
+            <p>Vision Peace and Human Rights Foundation is committed to global justice, equity, and the dignity of all people.</p>
+            <a href="#about" class="btn">Learn More</a>
+        </div>
+    </header>
+
+    <section class="about-section" id="about">
+        <div class="container">
+            <div class="grid">
+                <div class="card">
+                    <i class="fas fa-bullseye icon"></i>
+                    <h2>Our Mission</h2>
+                    <p>To protect and promote fundamental human rights, foster sustainable peace through dialogue, and provide humanitarian support to vulnerable populations.</p>
+                </div>
+                
+              
+            <div class="card">
+                
+                    <i class="fas fa-eye icon"></i>
+                    <h2>Our Vision</h2>
+                    <p>To build a global community where peace prevails, human dignity is respected, and every individual enjoys equal rights.</p>
+                </div>
+            </div>
+        </div>
+                
+    </section>
+    
+      <div class="story-img">
+                <img src="https://images.pexels.com/photos/3184433/pexels-photo-3184433.jpeg?auto=compress&cs=tinysrgb&w=800" alt="VPHRF Meeting">
+            </div>
+    
+    
+    <section class="pillars-section">
+    <div class="container">
+        <h2 class="section-title">Our Strategic <span>Pillars</span></h2>
+
+        <div class="pillar-row bg-light">
+            <div class="pillar-image">
+                <img src="https://images.unsplash.com/photo-1524178232363-1fb2b075b655?auto=format&fit=crop&w=800&q=80" alt="Intellectual Empowerment">
+            </div>
+            <div class="pillar-content">
+                <span class="tag">Knowledge</span>
+                <h3>Intellectual Empowerment</h3>
+                <p>We leverage education as a tool against oppression. VPHRF conducts high-level research and professional training for students, lawyers, and activists to master modern human rights advocacy and international legal frameworks.</p>
+            </div>
+        </div>
+
+        <div class="pillar-row bg-soft" style="flex-direction: row-reverse;">
+            <div class="pillar-image">
+                <img src="https://images.unsplash.com/photo-1511632765486-a01980e01a18?auto=format&fit=crop&w=800&q=80" alt="Global Peace">
+            </div>
+            <div class="pillar-content">
+                <span class="tag">Advocacy</span>
+                <h3>Global Peace Advocacy</h3>
+                <p>Our vision is a world where diplomacy triumphs over conflict. We intervene as neutral mediators in community and international disputes, creating platforms for sustainable dialogue to prevent violence before it escalates.</p>
+            </div>
+        </div>
+
+        <div class="pillar-row bg-navy-soft">
+            <div class="pillar-image">
+                <img src="https://images.unsplash.com/photo-1589829545856-d10d557cf95f?auto=format&fit=crop&w=800&q=80" alt="Justice">
+            </div>
+            <div class="pillar-content">
+                <span class="tag">Legal</span>
+                <h3>Justice & Legal Defense</h3>
+                <p>Our legal experts provide pro-bono services to victims of injustice. We stand firm in ensuring the rule of law is upheld, helping the underprivileged navigate the judicial system to achieve true equity and fairness.</p>
+            </div>
+        </div>
+
+        <div class="pillar-row bg-light" style="flex-direction: row-reverse;">
+            <div class="pillar-image">
+                <img src="https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?auto=format&fit=crop&w=800&q=80" alt="Humanitarian">
+            </div>
+            <div class="pillar-content">
+                <span class="tag">Response</span>
+                <h3>Humanitarian Response</h3>
+                <p>Beyond advocacy, we provide emergency relief to communities affected by conflict or disaster. This includes food, medical supplies, and psychological support for IDPs, ensuring every human life is valued.</p>
+            </div>
+        </div>
+
+        <div class="pillar-row bg-soft">
+            <div class="pillar-image">
+               <img src="https://images.pexels.com/photos/3184291/pexels-photo-3184291.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Research and Evidence">
+            </div>
+            <div class="pillar-content">
+                <span class="tag">Evidence</span>
+                <h3>Research & Documentation</h3>
+                <p>Expertise is built on facts. We specialize in documenting human rights violations with technical precision, providing credible data and reports that influence policy changes at national and international levels.</p>
+            </div>
+        </div>
+
+        <div class="pillar-row bg-navy-soft" style="flex-direction: row-reverse;">
+            <div class="pillar-image">
+               <img src="https://images.pexels.com/photos/3184418/pexels-photo-3184418.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Equality and Inclusion">
+            </div>
+            <div class="pillar-content">
+                <span class="tag">Equality</span>
+                <h3>Gender Equality & Inclusion</h3>
+                <p>We fight for a society where gender is not a barrier to opportunity. VPHRF promotes women’s leadership, protects the rights of the girl child, and ensures that marginalized groups are included in the peace-building process.</p>
+            </div>
+        </div>
+    </div>
+</section>
+   
+    <section class="who-we-are">
+        <div class="container flex-container">
+            <div class="text-box">
+                <h2>Who We Are</h2>
+                <p>Vision Peace and Human Rights Foundationn (VPHRF International) was established as a response to the growing global challenges of conflict and human rights violations.</p>
+                <p>With a team of experts in law, sociology, and international relations, we work to bridge the gap between policy and grassroots action. We believe in providing intellectual and practical solutions to the most pressing human rights issues of our time.</p>
+            </div>
+            <div class="image-box">
+                <img src="https://i.imgur.com/CsjjCZz.png" alt="VPHRF Team">
+            </div>
+        </div>
+    </section>
+
+    <section class="impact">
+        <div class="container impact-grid">
+            <div class="impact-item">
+                <h3 class="counter">50+</h3>
+                <p>Legal Interventions</p>
+            </div>
+            <div class="impact-item">
+                <h3 class="counter">120+</h3>
+                <p>Peace Workshops</p>
+            </div>
+            <div class="impact-item">
+                <h3 class="counter">10k+</h3>
+                <p>Lives Impacted</p>
+            </div>
+            <div class="impact-item">
+                <h3 class="counter">15</h3>
+                <p>Countries Reached</p>
+            </div>
+        </div>
+    </section>
+
+    <footer class="main-footer">
+    <div class="container footer-grid">
+        <div class="footer-logo">
+            <h2>VPHRF <span>International</span></h2>
+            <p>Building peace and protecting rights through expert-led advocacy and humanitarian commitment. Join our global mission today.</p>
+            <div  class="social-icons">
+                <a href="#" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" title="Twitter"><i class="fab fa-twitter"></i></a>
+                <a href="#" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                <a href="#" title="Instagram"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+
+        <div class="footer-links">
+            <h4>Organization</h4>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="about.html">Our Story</a></li>
+                <li><a href="about.html">Our Team</a></li>
+                <li><a href="contact.html">Join Us </a></li>
+            </ul>
+        </div>
+
+        <div class="footer-links">
+            <h4>Resources</h4>
+            <ul>
+                <li><a href="#">Legal Aid</a></li>
+                <li><a href="#">Peace Journals</a></li>
+                <li><a href="#">Human Rights Law</a></li>
+                <li><a href="#">Volunteer Portal</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-links">
+            <h4>Headquarters</h4>
+            <ul>
+                <li><i class="fas fa-map-marker-alt" style="color:var(--accent)"></i> Global headquarter katsina State, Nigeria.</li>
+                <li><i class="fas fa-envelope" style="color:var(--accent)"></i> contact@vhrpf.international</li>
+                <li><i class="fas fa-phone" style="color:var(--accent)"></i> +234 8064885296</li>
+            </ul>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p>&copy; Vision Peace and Human Rights Foundation International. Professionalism. Integrity. Peace.</p>
+    </div>
+</footer>
+    <script>
+       
+        const menuToggle = document.getElementById('menuToggle');
+        const navLinks = document.getElementById('navLinks');
+        const icon = menuToggle.querySelector('i');
+
+        menuToggle.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+            
+           
+            if (navLinks.classList.contains('active')) {
+                icon.classList.replace('fa-bars', 'fa-times');
+            } else {
+                icon.classList.replace('fa-times', 'fa-bars');
+            }
+        });
+
+       
+        document.querySelectorAll('.nav-links a').forEach(link => {
+            link.addEventListener('click', () => {
+                navLinks.classList.remove('active');
+                icon.classList.replace('fa-times', 'fa-bars');
+            });
+        });
+    </script>
+</body>
+</html>
